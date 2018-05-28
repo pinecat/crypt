@@ -7,6 +7,7 @@
 
 #include "./ciphers/atbash/atbash.h"
 #include "./ciphers/rot13/rot13.h"
+#include "./ciphers/caesar/caesar.h"
 
 /* constants */
 #define STR_LEN 8192

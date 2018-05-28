@@ -32,6 +32,7 @@ void print_menu()
 
 	printf("1. Atbash\n");
 	printf("2. ROT13\n");
+	printf("3. Caesar\n");
 
 	printf("\nCipher: ");
 	scanf("%d", &input);
@@ -63,6 +64,17 @@ void switch_menu(int input)
 			printf("Input Text: ");
 			read_line(text);
 			rot13(text, en_de);
+			printf("Output Text: %s\n", text);
+		} break;
+
+		case 3: {
+			printf("Caesar\n");
+			en_de = option();
+			printf("Input Text: ");
+			read_line(text);
+			printf("Input Shift: ");
+			scanf("%d", &shift);
+			caesar(text, shift, en_de);
 			printf("Output Text: %s\n", text);
 		} break;
 
